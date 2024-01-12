@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/styles/main.min.css" />
+    <title>Sorteador</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Sorteador</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <div class="qtdNum-container">
+            <label for="qtdNumber">Quantidade de números:</label>
+            <input required min="1" id="qtdNumber" type="number" />
+          </div>
+
+          <div class="numberRange-container">
+            <div class="numberRange">
+              <label for="rangenumber1">entre</label>
+              <input required min="1" id="rangenumber1" type="number" />
+            </div>
+
+            <div class="numberRange">
+              <label for="rangenumber2">e</label>
+              <input required min="1" id="rangenumber2" type="number" />
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="sortear">Sortear</button>
+            <button id="limpar">Limpar</button>
+          </div>
+        </form>
+
+        <div class="showResults"></div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./build/js/main.min.js"></script>
+  </body>
+</html>

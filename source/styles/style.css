@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Salsa", cursive;
+  letter-spacing: 5px;
+}
+
+header {
+  padding: 15px 40px;
+  background-color: #ddd;
+}
+
+main {
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 118px);
+  background-color: #ccc;
+}
+
+footer {
+  padding: 15px 40px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.showResults {
+  background-color: #fff;
+  height: fit-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.numberRange-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.numberRange label,
+.qtdNum-container label {
+  margin-right: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+input {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+}
